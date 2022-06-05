@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head -->
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div class="header">
+  <h1 id="title">Agah's Survey Form</h1>
+  <p id="description">Thank you for visiting my project</p>
+  </div>
+  
+  <div class="container">
+    <form id="survey-form">
+      <!-- First section. -->
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required/> </label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required/> </label>
+        <label id="number-label">Number: <input type="number" id="number" min="12" max="90" placeholder="Enter your age" required/> </label>
+      </fieldset>
+<!-- Second section. -->
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select name="current-role" id="dropdown">
+            <option value="">(select current role)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer Not to Say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label>Would you recommend LinkedIn learning to a friend?
+        <label><input type="radio" name="recommend" class="inline" value="definitely" /> Definitely</label>
+        <label><input type="radio" name="recommend" class="inline" value="maybe" /> Maybe</label>
+        <label><input type="radio" name="recommend" class="inline" value="not-sure"/> Not sure</label>
+        </label>
+        <label>What is your favourite feature on Linkedin
+        <select name="fav-feauture" id="dropdown-two">
+            <option value="">(select an option)</option>
+            <option value="1">Learning</option>
+            <option value="2">Premium</option>
+            <option value="3">Job Search</option>
+            <option value="4">Who viewed my profile</option>
+            <option value="5">Other</option>
+          </select>
+          </label>
+      </fieldset>
+<!-- Third section -->
+      <fieldset>
+        <label>What would you like to see improved?
+          <input type="checkbox" name="terms" class="inline" value="more-job-suggestions" required /> More job suggestions
+           <input type="checkbox" name="terms" class="inline" value="more-learning-courses" required /> More Learning courses
+            <input type="checkbox" name="terms" class="inline" value="free-premium" required /> Free Premium
+            <input type="checkbox" name="terms" class="inline" value="direct-messages" required /> Direct messages
+            <input type="checkbox" name="terms" class="inline" value="privacy" required /> Privacy
+            <input type="checkbox" name="terms" class="inline" value="other" required /> Other
+			  </label>
+        <label>Any comments or suggestions:
+          <textarea name="suggestions" rows="3" cols="30" placeholder="I think it would be better if..."></textarea>
+			  </label>
+      </fieldset>
+       <input id= "submit" type="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+</html>
